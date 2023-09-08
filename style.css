@@ -14,9 +14,12 @@ body {
   justify-content: center;
   align-items: center;
   width: 50rem;
-  height: 30rem;
+  height: 39rem;
   overflow: hidden;
+  background-color: olivedrab;
   margin-left: 20%;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 img {
