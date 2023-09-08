@@ -1,7 +1,9 @@
 let currentDay = document.querySelector(".currentDayOfTheWeek");
+let currentUTCTimeMillis = document.querySelector(".currentUTCTime");
 
+// created a function to get the current date
 function getCurrentDate() {
-  let daysOfWeek = [
+  let daysOfTheWeek = [
     "Sunday",
     "Monday",
     "Tuesday",
@@ -11,10 +13,15 @@ function getCurrentDate() {
     "Saturday",
   ];
     
+    // fetching the current day of the week and assigning it to the daysOfTheWeek Array
   let currentDate = new Date();
-  let dayOfWeek = currentDate.getDay();
-  return daysOfWeek[dayOfWeek];
+  let dayOfTheWeek = currentDate.getDay();
+  return daysOfTheWeek[dayOfTheWeek];
 }
 
+// This is where the h2 in the html is updated to the current day of the week
+currentDay.textContent = getCurrentDate();
 
- currentDay.textContent = `Today is ${getCurrentDate()}`;
+currentUTCTimeMillis.textContent = new Date().getTime();
+
+console.log(new Date);
