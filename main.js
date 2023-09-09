@@ -20,8 +20,9 @@ function getCurrentDate() {
 }
 
 // This is where the h2 in the html is updated to the current day of the week
-currentDay.textContent = getCurrentDate();
+currentDay.textContent = `The current day of the week is ${getCurrentDate()}`;
 
 currentUTCTimeMillis.textContent = new Date().getTime();
 
-console.log(new Date);
+
+
